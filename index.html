@@ -30,6 +30,30 @@ body{
     background:#f5f7fb;
 }
 
+/* Slider */
+.about-slider{
+    position:relative;
+    width:100%;
+    height:300px;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.about-slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    opacity:0;
+
+    transition:opacity 1s ease;
+}
+
+.about-slide.active{
+    opacity:1;
+}
+
 /* TOPBAR */
 
 .topbar{
@@ -474,9 +498,26 @@ footer{
 
     <div class="about-container">
 
-        <div class="about-image">
-            https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80" alt="Momentum Lift">
-        </div>
+       <div class="about-image">
+
+    <div class="about-slider">
+
+        <img class="about-slide active"
+ -1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80
+
+        <img class="about-slide"
+             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+             alt="Lift Project">
+
+        <img class="about-slide"
+             src="https://images.unsplash.com/photo-1497366754035-f200968a6e72o=format&fit=crop&w=1200&q=80"
+             alt="Elevator Solutions">
+
+    </div>
+		
+</div>
+
+
 
         <div class="about-content">
 
@@ -574,7 +615,7 @@ padding:100px 8%;
 ">
 
     <h2 style="
-    font-size:48px;
+    font-size:40px;
     margin-bottom:50px;
     font-weight:700;
     ">
@@ -601,7 +642,7 @@ padding:100px 8%;
             <br>
 
             <h2>
-                +91 98357 41251
+                +91 9835741251
             </h2>
 
             <br>
@@ -736,13 +777,23 @@ padding:100px 8%;
 
         <h2 style="
         color:#00285E;
-        margin-bottom:25px;
+        margin-bottom:18px;
         ">
             Request Free Quotation
         </h2>
 
-        <form>
+        <form id="quoteForm">
+			https://formsubmit.co/momentumliftpatna@gmail.com" method="POST">
+			
+			<input type="hidden" name="_subject"
+			value="New Quotation Request - Momentum Lift">
 
+			<input type="hidden" name="_captcha"
+			value="false">
+
+			<input type="hidden" name="_template"
+			value="table">
+	   
             <input type="text"
                    placeholder="Full Name"
                    required
@@ -836,13 +887,7 @@ padding:100px 8%;
 </footer>
 
 
-https://wa.me/919835741251="whatsapp"
-   target="_blank"
-   rel="noopener noreferrer">
 
-    <i class="fab fa-whatsapp"></i>
-
-</a>
 
 <script>
 
