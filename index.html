@@ -75,6 +75,7 @@ body{
     font-weight:700;
     padding-left:100%;
     animation:scrollText 45s linear infinite;
+    font-size:22px;
 	
 }
 
@@ -126,15 +127,35 @@ header.sticky{
 }
 
 .logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
     color:#fff;
     font-size:34px;
     font-weight:800;
 }
 
+.logo img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    border-radius:10px;
+}
+
+.logo img:hover{
+transform:scale(1.08);
+}
+
+.logo span{
+    color:#fff;
+}
+
+
 .nav-links{
     display:flex;
     align-items:center;
     gap:20px;
+    font-size:22px;
 }
 
 .nav-links a{
@@ -443,9 +464,10 @@ footer{
 
     <div class="navbar">
 
-        <div class="logo">
-            Momentum Lift
-        </div>
+<div class="logo">
+    <img src="./ML%20Logo.jpg"
+    <span>Momentum Lift</span>
+</div>
 
         <nav class="nav-links">
 
